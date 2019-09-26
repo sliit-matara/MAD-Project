@@ -130,7 +130,7 @@ public class LoanApply extends AppCompatActivity implements View.OnClickListener
         }
 
         if(dbHelper.addInfoToLoan(id,nic,loanType,amount,approvedDate,duration,interestRate)) {
-            Toast.makeText(getApplicationContext(), "Approved your Loan", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Approved your Loan!!!", Toast.LENGTH_LONG).show();
             Intent main = new Intent(this, MainActivity.class);
             startActivity(main);
 
