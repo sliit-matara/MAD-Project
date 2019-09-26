@@ -69,7 +69,7 @@ public class PayBillVerify extends AppCompatActivity implements View.OnClickList
                 errorAcc.setText("");
             }else if(Integer.parseInt(txtAmount.getText().toString())>balance.get(0)){
                 errorAmount.setTextColor(Color.RED);
-                errorAmount.setText("Amount exceeds from balance");
+                errorAmount.setText("Amount exceeds from balance!!!");
                 errorAcc.setText("");
             }else {
                 Intent billCon = new Intent(this, PayBillConfirm.class);

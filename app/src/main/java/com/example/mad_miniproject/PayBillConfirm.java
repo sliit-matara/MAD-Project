@@ -59,7 +59,7 @@ public class PayBillConfirm extends AppCompatActivity implements View.OnClickLis
             if(addPayBill()) {
                 updateBalance();
                 if (addTransaction()) {
-                    Toast.makeText(getApplicationContext(), "Bill Payment Successfully", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Bill Payment Successfully!!!", Toast.LENGTH_LONG).show();
                     Intent main = new Intent(PayBillConfirm.this, MainActivity.class);
                     startActivity(main);
                 }
