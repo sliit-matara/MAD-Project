@@ -84,7 +84,7 @@ public class MoneyTransOtherAccount extends AppCompatActivity implements View.On
                 errorAmount.setText("");
             }else if(balances.get(0)<Integer.parseInt(transAmt)) {
                 errorAmount.setTextColor(Color.RED);
-                errorAmount.setText("Amount exceeds from balance");
+                errorAmount.setText("Amount exceeds from balance!!");
                 errorAccNo.setText("");
             }else {
                 if(addMoneyTransfer()){
