@@ -64,7 +64,7 @@ public class PayBill extends AppCompatActivity implements View.OnClickListener {
             String spnValue = spnBiller.getSelectedItem().toString();
             if(spnValue.equals("Choose...")){
                 erTxtBiller.setTextColor(Color.RED);
-                erTxtBiller.setText("Please select a Biller");
+                erTxtBiller.setText("Please select a Biller!!!");
             }else {
                 erTxtBiller.setText("");
                 Intent billVer = new Intent(this, PayBillVerify.class);
